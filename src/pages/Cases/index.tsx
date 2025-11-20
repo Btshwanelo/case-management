@@ -193,7 +193,7 @@ const CasesScreen = () => {
             <div className="space-y-2"></div>
             <Button
               onClick={handleCreateCase}
-              className="w-full sm:w-auto flex items-center rounded-lg hover:bg-[#a11b23] hover:text-white border-2 px-[14px] py-[10px] bg-[#a11b23] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
+              className="w-auto flex items-center rounded-lg hover:bg-[#a11b23] hover:text-white border-2 px-[14px] py-[10px] bg-[#a11b23] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
             >
               <Plus className="mr-2 h-4 w-4" />
               Create New Case
@@ -263,7 +263,7 @@ const CasesScreen = () => {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full sm:w-auto flex items-center rounded-lg hover:bg-[#a11b23] hover:text-white border-2 px-[14px] py-[10px] bg-[#a11b23] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
+                    className="w-auto flex items-center rounded-lg hover:bg-[#a11b23] hover:text-white border-2 px-[14px] py-[10px] bg-[#a11b23] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
                     onClick={() => setIsSearch(!isSearch)}
                   >
                     <Search className="h-4 w-4 text-white" />

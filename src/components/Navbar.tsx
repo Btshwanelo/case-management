@@ -145,11 +145,11 @@ const Navbar = () => {
       <nav className="md:hidden border-b bg-white border-orange-500">
         <div className="flex items-center justify-between px-4 h-20">
           <Sheet>
-            <SheetTrigger asChild>
+            {/* <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
                 <Menu className="h-8 w-8 text-black" />
               </Button>
-            </SheetTrigger>
+            </SheetTrigger> */}
             <SheetContent
               side="left"
               className="w-[320px] p-0 bg-gradient-to-b from-white to-gray-50"
@@ -167,7 +167,7 @@ const Navbar = () => {
                 {/* Navigation Menu */}
                 <nav className="flex-1 px-4 py-6 space-y-2 overflow-y-auto">
                   <div className="space-y-1">
-                    {navigations.map((item) => {
+                    {/* {navigations.map((item) => {
                       const isActive = location.pathname === item.navigate;
 
                       return (
@@ -179,8 +179,8 @@ const Navbar = () => {
                     group flex items-center justify-between w-full px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 ease-in-out
                     ${
                       isActive
-                        ? "bg-orange-500 text-white shadow-lg shadow-orange-500/25 transform scale-[1.02]"
-                        : "text-gray-700 hover:bg-orange-50 hover:text-orange-600 hover:shadow-md hover:transform hover:scale-[1.01]"
+                        ? "bg-gray-500 text-white shadow-lg shadow-gray-500/25 transform scale-[1.02]"
+                        : "text-gray-700 "
                     }
                   `}
                         >
@@ -188,11 +188,9 @@ const Navbar = () => {
                             <div
                               className={`
                       flex-shrink-0 transition-colors duration-200
-                      ${isActive ? "text-white" : "text-gray-500 group-hover:text-orange-500"}
+                      ${isActive ? "text-white" : "text-gray-500 group-hover:text-gray-500"}
                     `}
-                            >
-                              {/* {getNavigationIcon(item.title)} */}
-                            </div>
+                            ></div>
                             <span className="truncate">{item.title}</span>
                           </div>
 
@@ -208,17 +206,17 @@ const Navbar = () => {
                           />
                         </Link>
                       );
-                    })}
+                    })} */}
                   </div>
                 </nav>
               </div>
             </SheetContent>
           </Sheet>
 
-          <div className="flex items-center space-x-4">
-            <span className="inline-flex items-center whitespace-nowrap overflow-hidden text-ellipsis text-sm text-[#363F72] bg-[#F8F9FC] border border-[#D5D9EB] py-1 px-2 rounded-full font-medium max-w-[200px]">
+          <div className="flex items-center space-x-4 ml-auto">
+            {/* <span className="inline-flex items-center whitespace-nowrap overflow-hidden text-ellipsis text-sm text-[#363F72] bg-[#F8F9FC] border border-[#D5D9EB] py-1 px-2 rounded-full font-medium max-w-[200px]">
               {getUserType()}
-            </span>
+            </span> */}
 
             <DropdownMenu modal={false}>
               <DropdownMenuTrigger asChild>
@@ -227,32 +225,25 @@ const Navbar = () => {
                 </div>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="">
-                {userDetails.aPtype != "Institution" && (
+                {/* {userDetails.aPtype != "Institution" && (
                   <DropdownMenuCheckboxItem
                     className="font-medium pl-4"
                     onClick={handleProfileNavigation}
                   >
                     <User2 className="mr-1 h-4" /> Profile
                   </DropdownMenuCheckboxItem>
-                )}
-                <SelectSeparator />
+                )} */}
                 <DropdownMenuCheckboxItem
-                  className="font-medium pl-4 text-red-500"
+                  className="font-medium pl-4 text-black"
                   onClick={handleLogout}
                 >
                   {" "}
-                  <LogOut className="mr-1 h-4 text-red-500" /> Logout
+                  <LogOut className="mr-1 h-4 text-black" /> Logout
                 </DropdownMenuCheckboxItem>
-                {config.envKey === "development" ||
-                  (config.envKey === "staging" && (
-                    <DropdownMenuCheckboxItem className="mt-2 cursor-not-allowed font-semibold text-purple-600 uppercase border bg-purple-50 border-purple-200">
-                      {config.envKey}
-                    </DropdownMenuCheckboxItem>
-                  ))}
               </DropdownMenuContent>
             </DropdownMenu>
 
-            <div className="relative cursor-pointer">
+            {/* <div className="relative cursor-pointer">
               <BellIcon
                 className="h-6 w-6"
                 onClick={() => setNotificationOpen(true)}
@@ -262,7 +253,7 @@ const Navbar = () => {
                   {quickActions.length}
                 </span>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>
