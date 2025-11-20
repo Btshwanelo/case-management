@@ -3,10 +3,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Eye, EyeOff, Sparkles } from "lucide-react";
+import { Eye, EyeOff, Sparkle, Sparkles } from "lucide-react";
 import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
-import Logo from "@/assets/EzraLogo.png";
-import LoginBg from "@/assets/auth-bg.png";
+import Logo from "@/assets/XiquelLogo01.png";
+import LoginBg from "@/assets/AboutBack01.jpg";
 import {
   useAuthenticateUserMutation,
   useExecuteRequest1Mutation,
@@ -244,7 +244,7 @@ const APSignInPage = () => {
     <div className="min-h-screen flex" data-testid="ap-signin-container">
       {/* Left Section */}
       <div
-        className="hidden lg:flex lg:w-1/2 bg-[#082635] relative"
+        className="hidden lg:flex lg:w-1/2 bg-[#a65a5a] relative"
         data-testid="ap-signin-left-section"
       >
         <div
@@ -262,14 +262,14 @@ const APSignInPage = () => {
           className="relative z-10 p-12 text-white flex flex-col justify-center"
           data-testid="ap-signin-hero-content"
         >
-          <div
+          {/* <div
             className=" mb-4 text-white text-4xl"
             data-testid="ap-signin-hero-icon"
           >
-            <Sparkles className="w-12 h-12" />
-          </div>
+            <Sparkle className="w-12 h-12" />
+          </div> */}
           <h1
-            className="text-5xl font-bold mb-4"
+            className="text-7xl font-bold mb-8"
             data-testid="ap-signin-hero-title"
           >
             Log in to your account
@@ -445,7 +445,7 @@ const APSignInPage = () => {
               {/* <a
                 data-testid="ap-signin-forgot-password-link"
                 href="/forgot-password?type=p"
-                className="text-sm text-[#0086C9] font-semibold hover:underline"
+                className="text-sm text-[#a11b23] font-semibold hover:underline"
               >
                 Forgot password
               </a> */}
@@ -454,7 +454,7 @@ const APSignInPage = () => {
             <Button
               data-testid="ap-signin-submit-btn"
               type="submit"
-              className="w-full flex items-center rounded-lg hover:bg-[#0086C9] hover:text-white border-2 px-[14px] py-[10px] bg-[#0086C9] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
+              className="w-full flex items-center rounded-lg hover:bg-[#a11b23] hover:text-white border-2 px-[14px] py-[10px] bg-[#a11b23] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
             >
               {isLoadingAuthenticateUser || isLoadingCurrentUser ? (
                 <ButtonLoader
@@ -485,7 +485,7 @@ const APSignInPage = () => {
                 <a
                   data-testid="ap-signin-register-link"
                   href="/sign-up?entry=p"
-                  className="text-[#0086C9] hover:underline font-semibold"
+                  className="text-[#a11b23] hover:underline font-semibold"
                 >
                   Register
                 </a>

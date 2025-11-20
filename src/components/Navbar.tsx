@@ -21,7 +21,7 @@ import {
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
 import { RootState } from "@/store";
-import Logo from "@/assets/EzraLogo.png";
+import Logo from "@/assets/XiquelLogo01.png";
 import { useDispatch, useSelector } from "react-redux";
 import { clearAuthData } from "@/slices/authSlice";
 import { SelectSeparator } from "./ui/select";

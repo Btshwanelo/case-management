@@ -568,7 +568,7 @@ const CreateCase = () => {
                 {/* Submit Button */}
                 <Button
                   type="submit"
-                  className="w-full  flex items-center rounded-lg hover:bg-[#0086C9] hover:text-white border-2 px-[14px] py-[10px] bg-[#0086C9] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
+                  className="w-full  flex items-center rounded-lg hover:bg-[#a11b23] hover:text-white border-2 px-[14px] py-[10px] bg-[#a11b23] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
                 >
                   {isLoadingCreate ? <Spinner className="text-white" /> : 'Submit'}
                 </Button>

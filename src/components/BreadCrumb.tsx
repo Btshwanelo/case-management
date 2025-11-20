@@ -5,7 +5,7 @@ const Breadcrumb = ({ items }) => {
   return (
     <div className="flex items-center gap-2 text-base text-gray-700 mb-4">
       <nav className="flex items-center gap-2 text-base font-normal text-gray-700 mb-2">
-        <Link to="/cases" className="flex items-center hover:text-[#0086C9] transition-colors duration-200">
+        <Link to="/cases" className="flex items-center hover:text-[#a11b23] transition-colors duration-200">
           <Home className="h-4 w-4 mr-1" />
           Cases
         </Link>
@@ -14,8 +14,8 @@ const Breadcrumb = ({ items }) => {
             <ChevronRight className="h-4 w-4" />
             <Link
               to={item.path}
-              className={`hover:text-[#0086C9] transition-colors duration-200 ${
-                index === items.length - 1 ? 'text-[#0086C9] pointer-events-none' : ''
+              className={`hover:text-[#a11b23] transition-colors duration-200 ${
+                index === items.length - 1 ? 'text-[#a11b23] pointer-events-none' : ''
               }`}
             >
               {item.label}

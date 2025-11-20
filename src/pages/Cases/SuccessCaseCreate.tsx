@@ -46,7 +46,7 @@ const ApplicationSuccess = ({ message, isGeneralCase = false }) => {
           ) : null} */}
 
           <Button
-            className="bg-[#0086C9] hover:bg-[#0086C9] px-8"
+            className="bg-[#a11b23] hover:bg-[#a11b23] px-8"
             onClick={() => navigate("/cases")}
           >
             Go Home

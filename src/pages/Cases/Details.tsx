@@ -293,7 +293,7 @@ const CaseDetails = () => {
                   <div
                     className={`border-2 border-dashed rounded-lg p-6 text-center ${
                       isDragging
-                        ? "border-[#0086C9] bg-orange-50"
+                        ? "border-[#a11b23] bg-orange-50"
                         : "border-gray-200"
                     }`}
                     onDragOver={handleDragOver}
@@ -305,7 +305,7 @@ const CaseDetails = () => {
                       <div>
                         <Button
                           variant="link"
-                          className="text-[#0086C9] p-0 h-auto font-normal"
+                          className="text-[#a11b23] p-0 h-auto font-normal"
                           onClick={() =>
                             document.getElementById("file-upload").click()
                           }
@@ -343,7 +343,7 @@ const CaseDetails = () => {
                   )}
 
                   <Button
-                    className="w-full bg-[#0086C9] hover:bg-[#0086C9]"
+                    className="w-full bg-[#a11b23] hover:bg-[#a11b23]"
                     onClick={handleReply}
                     disabled={isLoadingInvestigationLine || !reply.trim()}
                   >

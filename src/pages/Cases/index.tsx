@@ -193,7 +193,7 @@ const CasesScreen = () => {
             <div className="space-y-2"></div>
             <Button
               onClick={handleCreateCase}
-              className="w-full sm:w-auto flex items-center rounded-lg hover:bg-[#0086C9] hover:text-white border-2 px-[14px] py-[10px] bg-[#0086C9] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
+              className="w-full sm:w-auto flex items-center rounded-lg hover:bg-[#a11b23] hover:text-white border-2 px-[14px] py-[10px] bg-[#a11b23] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
             >
               <Plus className="mr-2 h-4 w-4" />
               Create New Case
@@ -215,7 +215,7 @@ const CasesScreen = () => {
           </div>
 
           {isSearch && (
-            <div className="bg-blue-100  px-6 py-2 rounded-lg text-[#0086C9] font-semibold flex justify-between">
+            <div className="bg-blue-100  px-6 py-2 rounded-lg text-[#a11b23] font-semibold flex justify-between">
               <div>
                 <span className="text-black"> Showing search results for </span>{" "}
                 {searchTerm}
@@ -263,7 +263,7 @@ const CasesScreen = () => {
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full sm:w-auto flex items-center rounded-lg hover:bg-[#0086C9] hover:text-white border-2 px-[14px] py-[10px] bg-[#0086C9] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
+                    className="w-full sm:w-auto flex items-center rounded-lg hover:bg-[#a11b23] hover:text-white border-2 px-[14px] py-[10px] bg-[#a11b23] text-white shadow-sm justify-center gap-2 border-[#ffffff1f]"
                     onClick={() => setIsSearch(!isSearch)}
                   >
                     <Search className="h-4 w-4 text-white" />
@@ -328,14 +328,14 @@ const CasesScreen = () => {
                           <Button
                             variant="outline"
                             size="sm"
-                            className="border border-[#0086C9] text-[#0086C9] hover:text-[#0086C9]"
+                            className="border border-[#a11b23] text-[#a11b23] hover:text-[#a11b23]"
                           >
                             View
                           </Button>
                         </Button>
                         {/* <DropdownMenu modal={false}>
                           <DropdownMenuTrigger asChild>
-                            <Button variant="outline" size="sm" className="border border-[#0086C9] text-[#0086C9] hover:text-[#0086C9]">
+                            <Button variant="outline" size="sm" className="border border-[#a11b23] text-[#a11b23] hover:text-[#a11b23]">
                               Actions
                             </Button>
                           </DropdownMenuTrigger>
